@@ -6,3 +6,20 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+def cumulative_sum(list_name):
+	# Calls empty list to store cumulative numbers
+	sum_list = []
+	for idx,n in enumerate(list_name):
+		# First number stays the same in the new list
+		if idx == 0:
+			sum_list.append(n)
+		else:
+			sum_list.append(n + sum_list[idx-1])
+	return sum_list
+
+def main():
+	pass
+
+if __name__ == '__main__':
+    main()
